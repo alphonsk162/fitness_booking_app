@@ -47,8 +47,8 @@ A Django REST API for managing fitness class bookings with proper timezone handl
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/alphonsk162/facebook.git
-cd facebook
+git clone https://github.com/alphonsk162/fitness_booking_app.git
+cd fitness_booking_app
 ```
 
 ### 2. Create a Virtual Environment
@@ -63,24 +63,12 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 5. Apply Migrations
+### 4. Apply Migrations
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 4. Database Setup
-
-```bash
-# Create migrations
-python manage.py makemigrations booking
-
-# Apply migrations
-python manage.py migrate
-
-# Create superuser (optional, for admin access)
-python manage.py createsuperuser
-```
 
 ### 5. Seed Sample Data
 
@@ -149,8 +137,8 @@ Book a fitness class.
         "booking_id": 1,
         "class_name": "YOGA",
         "class_datetime_ist": "2025-06-22 10:00:00 IST",
-        "client_name": "Sneha Reddy",
-        "client_email": "sneha.reddy@email.com",
+        "client_name": "Rahul Patel",
+        "client_email": "rahul.patel@email.com",
         "remaining_slots": 11
     }
 }
@@ -181,8 +169,6 @@ Get all bookings for a specific email.
 }
 ```
 
-### 4. GET /api/health/
-Health check endpoint.
 
 ## Sample cURL Commands
 
